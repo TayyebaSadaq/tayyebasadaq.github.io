@@ -1,9 +1,142 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Tayyeba Sadaq</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+
 </head>
+
 <body>
-  <script>window.location.href = "about.html";</script>
+  <!-- Navigation bar -->
+  <div class="top-nav">
+    <a href="#Projects">Projects</a>
+    <a href="#Timeline">Timeline</a>
+    <a class='active' href="#Home">Home</a>
+  </div>
+
+  <!-- Home section -->
+  <section id='Home'>
+    <img src="assets/images/me.jpg" alt="Profile Picture" class="profile-pic">
+    <H1>Hi, It's Tayyeba.</H1>
+    <h2> Currently in office 🔴</h2>
+    <P>I'm currently exploring the spaces of automation and systems whilst also pursuing a Masters in Cyber.</p>
+  </section>
+  <hr class="divider">
+
+  <!-- Timeline Section (top is work, bottom is volunteer and extra)-->
+  <section id='Timeline'>
+    <ul class="timeline">
+      <h1> My Timeline</h1>
+      <li class="entry">
+        <div class="entry-row">
+          <span class="entry-title">Studying and graduated BSc Computer Science</span>
+          <span class="entry-date">2021-2025</span>
+        </div>
+        <p class="entry-note">First class honours from University of Derby. Studied computer science with a pathway in
+          software engineering that gave me a good starting point in the theory I'll need going forward in this field.
+        </p>
+      </li>
+      <li class="entry">
+        <div class="entry-row">
+          <span class="entry-title">Volunteering at Project: Lean on me</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <p class="entry-note">worked on research and writing articles for student and young people mental health. This
+          was a good chance to network and also work on soft skills in a project that wasn't as tech oriented.</p>
+      </li>
+      <li class="entry">
+        <div class="entry-row">
+          <span class="entry-title">First role - Reporting analyst</span>
+          <span class="entry-date">Sept 2025 - Aug 2026</span>
+        </div>
+        <p class="entry-note">12 month contract role with HSS Proservice. I mainly worked to streamline reporting and
+          created data oriented visualisations to help provide actionable insights for decision making.</p>
+      </li>
+      <li class="entry">
+        <div class="entry-row">
+          <span class="entry-title">Studying MS Cybersecurity</span>
+          <span class="entry-date">2026-Current</span>
+        </div>
+        <p class="entry-note">Studying part time at Open University. I did this more for myself and to give me a branch
+          into the cybersecurity field and work on my theoretical knowledge to apply in my own work down the line. I
+          think it gives me more of a holistic view when approaching problem solving and solution design.</p>
+      </li>
+      <li class="entry">
+        <div class="entry-row">
+          <span class="entry-title">Role Change - Data and Automation Analyst</span>
+          <span class="entry-date">2026-Current</span>
+        </div>
+        <p class="entry-note">Permanent offer at HSS Proservice as Data and Automation analyst. Still working on
+          reporting but more of a shift now towards designing systems and flows to streamline workflows within the
+          department and teams.</p>
+      </li>
+      <li class="entry">
+        <div class="entry-row">
+          <span class="entry-title">Started Blogging</span>
+          <span class="entry-date">2026-current</span>
+        </div>
+        <p class="entry-note">Started blog on substack to write about my experiences in tech and document my thoughts
+          and growth overtime. It gives me a segway to find a community and likeminded people to interact and connect
+          with as I grow.</p>
+      </li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <!-- Project Section -->
+  <section id='Projects'>
+    <h1> What I've been working on</h1>
+    <h3>I'm slowly getting back into the flow of coding and making things from scratch but here's where you'll be able
+      to see what stuff i've worked on before and maybe a sneak peak of things I'm planning or working on currently :)
+    </h3>
+
+<div class="cards">
+    <div class="card">
+      <span class="card-title">Diabetes prediction</span>
+      <p class="card-content">
+        Usding machine learning and XAI to build on my knowledge in a practical, scalable project
+      </p>
+      <button
+        type="button"
+        class="card-button"
+        data-url="https://github.com/TayyebaSadaq/Diabetes-risk-with-ML-and-XAI"
+      >
+        Click me
+      </button>
+    </div>
+
+    <div class="card">
+      <span class="card-title">StyleIt</span>
+      <p class="card-content">
+      Coming Soon  
+      </p>
+      <button
+        type="button"
+        class="card-button"
+        data-url="https://github.com/TayyebaSadaq/styleit"
+        >
+      Click me
+      </button>
+    </div>
+</div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <div class="footer">
+    <a href='https://substack.com/@codedbytea'><img src="assets/icons/icons8-substack-96.png" class="social-ico"></a>
+    <!-- <a href=''><img src="assets/icons/icons8-email-96.png" class="social-ico"></a> -->
+    <a href='https://instagram.com/codedbytea'><img src="assets/icons/icons8-instagram-96.png" class="social-ico"></a>
+    <a href='https://www.linkedin.com/in/tayyeba-sadaq/'><img src="assets/icons/icons8-linkedin-96.png"
+        class="social-ico"></a>
+    <a href='https://github.com/TayyebaSadaq'><img src="assets/icons/icons8-github-96.png" class="social-ico"></a>
+    <a href='https://youtube.com/@codedbytea'><img src="assets/icons/icons8-youtube-96.png" class="social-ico"></a>
+  
+  </div>
+
 </body>
+
 </html>
