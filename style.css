@@ -189,6 +189,20 @@ main {
     }
 }
 
+/* blinkies */
+.blinkies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.blinkies img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Headings */
 h2 {
@@ -302,8 +316,12 @@ footer {
     border-width: 2px;
     border-color: var(--cream);
     background-color: var(--light-pink);
+    align-items: center;
 }
 
+footer p {
+    text-align: center;
+}
 
 /* Two-column sections */
 
