@@ -1,0 +1,435 @@
+/* Color palette */
+:root {
+    --cream: #fefee3;
+    --pink: #ffc9b9;
+    --light-pink: #f9e0d9;
+    --orange: #d68c45;
+    --light-orange: #f2c57c;
+    --dark-green: #2c6249;
+    --light-green: #a3c4a1;
+    --middle-green: #4c956c;
+}
+/* font imports */
+@font-face {
+    font-family: "Oliver";
+    src: url("/assets/fonts/oliver/Olivera_Demo.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ruigslay";
+    src: url("/assets/fonts/ruigslay/Ruigslay.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+::selection
+    {
+        background-color: var(--light-pink);
+        color: var(--dark-green);
+    }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("/assets/squared-watercolor-paper.jpg");
+    background-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    font-family: "Comic Neue", cursive;
+    font-size: 11px;
+    color: var(--dark-pink);
+    cursor: url("/assets/icons/cursor.gif");
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-pink);
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Main page wrapper */
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: var(--pink);
+    background-image: url("/assets/banner.jpg");
+}
+
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav li {
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    transition: transform 0.4s ease;
+    background-color: var(--pink);
+    border-radius: 5px;
+}
+
+nav li:hover {
+    transform: rotate(-5deg) scale(1.1);
+    background-color: var(--light-pink);
+
+}
+
+
+/* Main three-column layout */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-content {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-sidebar {
+    grid-column: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Images */
+.avatar {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid var(--pink);
+}
+
+
+.box-border em {
+    color: var(--dark-green);
+    text-wrap: pretty;
+}
+
+/* Content boxes */
+.box-border {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cream);
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.box-border li {
+    text-align: left;
+    color: var(--middle-green);
+    strong {
+        color: var(--dark-green);
+    }
+}
+
+
+/* Headings */
+h2 {
+    font-family: "ruigslay";
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark-green);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Paragraphs */
+p {
+    font-size: 11px;
+    color: var(--orange);
+    text-align: justify;
+}
+.line-dashed {
+    border: none;
+    border-top: 1px dashed var(--pink);
+}
+/* experience section */
+.experience-list,
+.projects-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-list li,
+.projects-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+
+.experience-list li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("/assets/icons/paper5.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Sidebar list */
+.sidebar-list {
+    font-size: 14px;
+    line-height: 35px;
+    font-family: times new roman;
+    color: var(--middle-green);
+}
+
+.sidebar-list img {
+    width: 12px;
+}
+
+/* project section */
+.projects-list {
+    color: var(--orange);
+}
+
+.projects-list ul {
+    padding: 0;
+}
+
+.projects-list li {
+    color: var(--middle-green);
+    line-height: 1.6;
+}
+
+.projects-list strong {
+    color: var(--dark-green);
+}
+
+.projects-list a {
+    color: var(--orange);
+    text-decoration: underline wavy var(--light-green);
+}
+
+.projects-list a:hover {
+    color: var(--middle-green);
+}
+
+.projects-list li::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url("/assets/icons/disc.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: var(--cream);
+    background-color: var(--light-pink);
+}
+
+
+/* Two-column sections */
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+/* Tablet Layout*/
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    header {
+        height: 320px;
+    }
+
+    /* Everything stacks into one column */
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .main-content,
+    .right-sidebar {
+        grid-column: 1 / -1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-border {
+        align-items: center;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /* Keep inner sections stacked on tablet too */
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-list {
+        text-align: center;
+    }
+}
+
+
+/* Mobile Layout */
+
+@media (max-width: 550px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    header {
+        height: 250px;
+        padding: 12px;
+    }
+
+    nav {
+        min-height: auto;
+        padding: 5px 0;
+    }
+
+    nav ul {
+        width: 100%;
+        gap: 6px;
+    }
+
+    nav li {
+        width: calc(50% - 3px);
+        font-size: 13px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .main-content,
+    .right-sidebar {
+        grid-column: 1 / -1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-border {
+        align-items: center;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .avatar {
+        height: 220px;
+    }
+
+    .sidebar-list {
+        text-align: center;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
